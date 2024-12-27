@@ -1,0 +1,31 @@
+// https://prettier.io/
+module.exports = {
+  // prettier-plugin-tailwindcss 应放置在最后才生效 https://github.com/tailwindlabs/prettier-plugin-tailwindcss/issues/191
+  plugins: [
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-packagejson",
+    "prettier-plugin-tailwindcss",
+  ],
+  tailwindConfig: "./tailwind.config.js",
+  printWidth: 80,
+  tabWidth: 2,
+  useTabs: false,
+  semi: true,
+  singleQuote: true,
+  quoteProps: "as-needed",
+  jsxSingleQuote: true,
+  trailingComma: "all",
+  bracketSpacing: true,
+  jsxBracketSameLine: true,
+  arrowParens: "avoid",
+  requirePragma: false,
+  insertPragma: false,
+  proseWrap: "preserve",
+  htmlWhitespaceSensitivity: "css",
+  endOfLine: "auto",
+  embeddedLanguageFormatting: "auto",
+  trailingComma: "all",
+  importOrder: ["^@/(.*)$", "^[./]"],
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true,
+};
